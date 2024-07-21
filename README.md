@@ -3,6 +3,10 @@ Project description: Build a data warehouse from scratch with my own milk tea da
 
 Create a data warehouse in SSMS incorporating both the star schema and snowflake structure. I need a fact table to capture daily transactions and several dimensional tables to describe various aspects of those transactions.
 
+Fact Table: milktea_sales captures transactions and links to all the dimension tables.
+Dimensional Tables: milktea_order, drink_ingredient, ingredient_vendor, loyal_customer_info, calendar, and payment_dimension provide the descriptive attributes and are linked to the fact table.
+Snowflake structure: The drink_ingredient table links to the ingredient_vendor table, creating a snowflake schema within the star schema.
+
 Fact Table: milktea_sales (This table will capture the daily transactions.)
 
 milktea_sales:
@@ -25,7 +29,7 @@ milktea_order:
 - topping (String)
 - ice_level (Integer)
 - sugar_level (Integer)
-- togo (Boolean)
+- togo (String)
 - price (Money)
   
 drink_ingredient:
@@ -49,15 +53,14 @@ loyal_customer_info:
 
 calendar:
 - date_id (Primary Key, integer, auto-increment)
-- date (Date)
+- purchase_date (Date)
 - day_of_week (String)
-- month (String)
-- quarter (String)
-- year (Integer)
-- is_weekend (Boolean)
+- purchase_month (String)
+- purchase_year (Integer)
 
 payment:
 - payment_id (Primary Key, integer, auto-increment)
 - payment_type (String)
 - transaction_date (DateTime)
 - amount (Money)
+
