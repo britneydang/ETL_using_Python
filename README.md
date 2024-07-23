@@ -75,7 +75,7 @@ I will have 3 .py files:
   - Transformation: cleaning data methods (remove duplication, handle missing value, correct data types, correct format text, remove column, check unique ID, check NULL values, check NaN values) and aggregation methods (sorting by price in ascending order and vice versa, calculate total sales for each drink, calculate average sales price for each drink, calculate monthly total sales, find top 2 most expensive/cheapest drinks)
   - Loading: load to file format csv, excel, json, and sql table. 
 - main.py: stores some ETL scenarios:
-  - ETL 1: extract csv, transform, and load to sql table. In this scenario, for transformation, I need to use convert_empty_strings method. After load df into the SQL database, NaN values will be automatically treated as NULL in SQL database. Also, use correct format_text.
+  - ETL 1: extract csv, transform, and load to sql table. In this scenario, for transformation, I will use convert_empty_strings method. After load df into the SQL database, NaN values will be automatically treated as NULL in SQL database. Also, use correct format_text.
 ![image](https://github.com/user-attachments/assets/1fba629b-4952-4347-a29a-280085e95b77)
 
 Snip below is a screenshot of original csv file.
@@ -89,6 +89,19 @@ My milktea_order table before ETL process
 My milktea_order table after ETL process
 
 ![image](https://github.com/user-attachments/assets/18658435-4214-4502-aabd-8716a48cb358)
+
+  - ETL 2: extract excel, transform, and load to json. In this scenario, for transformation, I will use format_date to convert into YYYY-MM-DD format. Also use convert_to_numeric in amount column to round to 2 decimals.
+![image](https://github.com/user-attachments/assets/88cdd206-00c3-4dbb-b7a8-e786d6e7bf4b)
+
+Snip below is a screenshot of original excel file.
+
+![image](https://github.com/user-attachments/assets/054f72f9-6d10-4538-b116-424d2cb2e232)
+
+Load to json format
+
+![image](https://github.com/user-attachments/assets/0fdc5f97-bd99-4619-891b-14ee12a1e5bd)
+
+
 
 
 
