@@ -75,14 +75,20 @@ I will have 3 .py files:
   - Transformation: cleaning data methods (remove duplication, handle missing value, correct data types, correct format text, remove column, check unique ID, check NULL values, check NaN values) and aggregation methods (sorting by price in ascending order and vice versa, calculate total sales for each drink, calculate average sales price for each drink, calculate monthly total sales, find top 2 most expensive/cheapest drinks)
   - Loading: load to file format csv, excel, json, and sql table. 
 - main.py: stores some ETL scenarios:
-  - ETL 1: extract csv, transform, and load to sql table. In this scenario, for transformation, I need to use convert_empty_strings method. After load df into the SQL database, NaN values will be automatically treated as NULL in SQL database. Also, use correct format_text. Snip below is a screenshot of original csv file.
+  - ETL 1: extract csv, transform, and load to sql table. In this scenario, for transformation, I need to use convert_empty_strings method. After load df into the SQL database, NaN values will be automatically treated as NULL in SQL database. Also, use correct format_text.
+![image](https://github.com/user-attachments/assets/1fba629b-4952-4347-a29a-280085e95b77)
+
+Snip below is a screenshot of original csv file.
+
 ![image](https://github.com/user-attachments/assets/74ccdc7d-9766-47f4-9295-a6ef7b691a95)
 
 My milktea_order table before ETL process
+
 ![image](https://github.com/user-attachments/assets/e82abdc6-2e61-4f93-9d9b-2d0dba5f4b68)
 
 My milktea_order table after ETL process
 
+![image](https://github.com/user-attachments/assets/18658435-4214-4502-aabd-8716a48cb358)
 
 
 
