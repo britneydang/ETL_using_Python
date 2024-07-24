@@ -126,7 +126,6 @@ Load to excel. Each calculation will be in separate sheet.
 ![image](https://github.com/user-attachments/assets/8a327a2d-aa01-4f65-a744-3ddd6b6f22c6)
   - Schedules: New -> add Name, choose type of schedule and frequency
 ![image](https://github.com/user-attachments/assets/2dee44a9-9863-4ed5-aa38-ec23a9e395e3)
-  - 
 
 
 
